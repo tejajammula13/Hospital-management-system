@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from rest_framework import serializers
 from .models import Doctor, Patient, Appointment
 
@@ -40,3 +41,22 @@ class AppointmentSerializer(serializers.ModelSerializer):
                 f"{doctor.name} is already booked at {time} on {date}.")
 
         return data
+=======
+from rest_framework import serializers
+from .models import Doctor, Patient, Appointment
+
+class DoctorSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Doctor
+        fields = '__all__'
+
+class PatientSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Patient
+        fields = '__all__'
+
+class AppointmentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Appointment
+        fields = '__all__'
+>>>>>>> d2692dd19244e7c85cd7ca2f684633d8dbe204e0

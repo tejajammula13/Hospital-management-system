@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 ASGI config for hospital_management project.
 
@@ -14,3 +15,21 @@ from django.core.asgi import get_asgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hospital_management.settings')
 
 application = get_asgi_application()
+=======
+"""
+ASGI config for hospital_management project.
+
+It exposes the ASGI callable as a module-level variable named ``application``.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/5.2/howto/deployment/asgi/
+"""
+
+import os
+
+from django.core.asgi import get_asgi_application
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hospital_management.settings')
+
+application = get_asgi_application()
+>>>>>>> d2692dd19244e7c85cd7ca2f684633d8dbe204e0

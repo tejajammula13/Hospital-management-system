@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 """
 WSGI config for hospital_management project.
 
@@ -15,21 +14,3 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hospital_management.settings')
 
 application = get_wsgi_application()
-=======
-"""
-WSGI config for hospital_management project.
-
-It exposes the WSGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/5.2/howto/deployment/wsgi/
-"""
-
-import os
-
-from django.core.wsgi import get_wsgi_application
-
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hospital_management.settings')
-
-application = get_wsgi_application()
->>>>>>> d2692dd19244e7c85cd7ca2f684633d8dbe204e0

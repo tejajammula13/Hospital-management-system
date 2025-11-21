@@ -1,7 +1,5 @@
 from rest_framework.permissions import BasePermission
 
-# ---------------------- INDIVIDUAL PERMISSIONS ----------------------
-
 # Admin Permission
 class IsAdmin(BasePermission):
     def has_permission(self, request, view):
@@ -30,7 +28,7 @@ class IsReceptionist(BasePermission):
             and request.user.groups.filter(name='Receptionist').exists()
         )
 
-# ---------------------- COMBINED PERMISSIONS ----------------------
+#COMBINED PERMISSIONS 
 
 # Admin OR Doctor OR Receptionist
 class IsAdminOrDoctorOrReceptionist(BasePermission):

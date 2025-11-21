@@ -23,6 +23,7 @@ from rest_framework.authtoken.views import obtain_auth_token
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('hospital.urls')),
-    path('api-token-auth/', obtain_auth_token, name='api_token_auth'),
+    path('api/api-token-auth/', obtain_auth_token, name='api_token_auth'),
+    
 
 ]

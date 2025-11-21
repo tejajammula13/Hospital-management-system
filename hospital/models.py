@@ -1,9 +1,11 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 
 class Doctor(models.Model):
     name = models.CharField(max_length=100)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='doctor_profile',null=True,blank=True)
     specialization = models.CharField(max_length=100)
     contact_number = models.CharField(max_length=15)
     created_time = models.DateTimeField(auto_now_add=True)
